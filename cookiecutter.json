@@ -1,0 +1,8 @@
+{
+  "module_name": "my_module",
+  "dir_name": "feature_{{ cookiecutter.module_name }}",
+  "root_package": "com.example.app",
+  "package_name": "{{ cookiecutter.root_package }}.{{ cookiecutter.module_name }}",
+  "package_dir": "{{ cookiecutter.package_name | replace('.', '/') }}",
+  "_copy_without_render": ["gradle/", "*gradlew", "*gradlew.bat"]
+}
