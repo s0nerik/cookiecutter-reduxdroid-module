@@ -4,6 +4,7 @@
         <provider
             android:authorities="${applicationId}.{{ cookiecutter.module_name }}-module"
             android:name=".Module"
+            android:exported="false"
             />
     </application>
 </manifest>
